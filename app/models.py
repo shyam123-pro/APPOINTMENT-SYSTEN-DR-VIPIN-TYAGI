@@ -7,11 +7,7 @@ class Appointment(models.Model):
     gender=models.CharField(max_length=100)
     mobile=models.CharField(max_length=15)
     date=models.DateTimeField()
-<<<<<<< HEAD
-    status=models.CharField(max_length=100,default="Pending")
-=======
     status=models.CharField(max_length=100,default="success")
->>>>>>> 035c312 (design)
 
     def __str__(self):
         return self.name

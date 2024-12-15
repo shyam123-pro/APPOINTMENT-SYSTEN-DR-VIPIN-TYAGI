@@ -122,8 +122,6 @@ def get_doctor(request, id):
             return JsonResponse({"error": "Doctor not found"}, status=404)
     else:
         return JsonResponse({"error": "Only GET method is allowed"}, status=405)
-<<<<<<< HEAD
-=======
 
 
 
@@ -204,4 +202,3 @@ def cancel_appointment(request, appointment_id):
         except Appointment.DoesNotExist:
             return JsonResponse({'error': 'Appointment not found.'}, status=404)
     return JsonResponse({'error': 'Invalid request method.'}, status=405)
->>>>>>> 035c312 (design)
